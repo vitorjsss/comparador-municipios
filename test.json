@@ -1,0 +1,244 @@
+[
+  {
+    "id": "1002667",
+    "variavel": "Pessoas de 18 anos ou mais de idade - percentual do total geral",
+    "unidade": "Percentual",
+    "resultados": [
+      {
+        "classificacoes": [
+          {
+            "id": "1568",
+            "nome": "Nível de instrução",
+            "categoria": {
+              "120704": "Total"
+            }
+          },
+          {
+            "id": "58",
+            "nome": "Grupo de idade",
+            "categoria": {
+              "95253": "Total"
+            }
+          },
+          {
+            "id": "2",
+            "nome": "Sexo",
+            "categoria": {
+              "6794": "Total"
+            }
+          },
+          {
+            "id": "86",
+            "nome": "Cor ou raça",
+            "categoria": {
+              "95251": "Total"
+            }
+          }
+        ],
+        "series": [
+          {
+            "localidade": {
+              "id": "3550308",
+              "nivel": {
+                "id": "N6",
+                "nome": "Município"
+              },
+              "nome": "São Paulo (SP)"
+            },
+            "serie": {
+              "2022": "100.00"
+            }
+          }
+        ]
+      },
+      {
+        "classificacoes": [
+          {
+            "id": "1568",
+            "nome": "Nível de instrução",
+            "categoria": {
+              "9493": "Sem instrução e fundamental incompleto"
+            }
+          },
+          {
+            "id": "58",
+            "nome": "Grupo de idade",
+            "categoria": {
+              "95253": "Total"
+            }
+          },
+          {
+            "id": "2",
+            "nome": "Sexo",
+            "categoria": {
+              "6794": "Total"
+            }
+          },
+          {
+            "id": "86",
+            "nome": "Cor ou raça",
+            "categoria": {
+              "95251": "Total"
+            }
+          }
+        ],
+        "series": [
+          {
+            "localidade": {
+              "id": "3550308",
+              "nivel": {
+                "id": "N6",
+                "nome": "Município"
+              },
+              "nome": "São Paulo (SP)"
+            },
+            "serie": {
+              "2022": "20.91"
+            }
+          }
+        ]
+      },
+      {
+        "classificacoes": [
+          {
+            "id": "1568",
+            "nome": "Nível de instrução",
+            "categoria": {
+              "9494": "Fundamental completo e médio incompleto"
+            }
+          },
+          {
+            "id": "58",
+            "nome": "Grupo de idade",
+            "categoria": {
+              "95253": "Total"
+            }
+          },
+          {
+            "id": "2",
+            "nome": "Sexo",
+            "categoria": {
+              "6794": "Total"
+            }
+          },
+          {
+            "id": "86",
+            "nome": "Cor ou raça",
+            "categoria": {
+              "95251": "Total"
+            }
+          }
+        ],
+        "series": [
+          {
+            "localidade": {
+              "id": "3550308",
+              "nivel": {
+                "id": "N6",
+                "nome": "Município"
+              },
+              "nome": "São Paulo (SP)"
+            },
+            "serie": {
+              "2022": "14.32"
+            }
+          }
+        ]
+      },
+      {
+        "classificacoes": [
+          {
+            "id": "1568",
+            "nome": "Nível de instrução",
+            "categoria": {
+              "9495": "Médio completo e superior incompleto"
+            }
+          },
+          {
+            "id": "58",
+            "nome": "Grupo de idade",
+            "categoria": {
+              "95253": "Total"
+            }
+          },
+          {
+            "id": "2",
+            "nome": "Sexo",
+            "categoria": {
+              "6794": "Total"
+            }
+          },
+          {
+            "id": "86",
+            "nome": "Cor ou raça",
+            "categoria": {
+              "95251": "Total"
+            }
+          }
+        ],
+        "series": [
+          {
+            "localidade": {
+              "id": "3550308",
+              "nivel": {
+                "id": "N6",
+                "nome": "Município"
+              },
+              "nome": "São Paulo (SP)"
+            },
+            "serie": {
+              "2022": "37.07"
+            }
+          }
+        ]
+      },
+      {
+        "classificacoes": [
+          {
+            "id": "1568",
+            "nome": "Nível de instrução",
+            "categoria": {
+              "99713": "Superior completo"
+            }
+          },
+          {
+            "id": "58",
+            "nome": "Grupo de idade",
+            "categoria": {
+              "95253": "Total"
+            }
+          },
+          {
+            "id": "2",
+            "nome": "Sexo",
+            "categoria": {
+              "6794": "Total"
+            }
+          },
+          {
+            "id": "86",
+            "nome": "Cor ou raça",
+            "categoria": {
+              "95251": "Total"
+            }
+          }
+        ],
+        "series": [
+          {
+            "localidade": {
+              "id": "3550308",
+              "nivel": {
+                "id": "N6",
+                "nome": "Município"
+              },
+              "nome": "São Paulo (SP)"
+            },
+            "serie": {
+              "2022": "27.70"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
