@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getStates } from "@/features/cities/api";
+import { getStates } from "@/services";
 
 export function useStates() {
     const {

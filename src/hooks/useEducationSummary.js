@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { getSewageSummary } from "@/features/cities/api";
+import { getEducationSummary } from "@/services";
 
-export function useSewageSummary(idCidade) {
+export function useEducationSummary(idCidade) {
     const {
         isLoading,
         data,
         error,
     } = useQuery({
-        queryKey: ['citySewageSummary', idCidade],
-        queryFn: () => getSewageSummary(idCidade),
+        queryKey: ['cityEducationSummary', idCidade],
+        queryFn: () => getEducationSummary(idCidade),
         enabled: !!idCidade,
     });
 

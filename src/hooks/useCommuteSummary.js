@@ -1,14 +1,14 @@
 import { useQuery } from "@tanstack/react-query";
-import { getWaterNetworkCoverage } from "@/features/cities/api";
+import { getCommuteSummary } from "@/services";
 
-export function useWaterNetworkCoverage(idCidade) {
+export function useCommuteSummary(idCidade) {
     const {
         isLoading,
         data,
         error,
     } = useQuery({
-        queryKey: ['cityWaterNetworkCoverage', idCidade],
-        queryFn: () => getWaterNetworkCoverage(idCidade),
+        queryKey: ['cityCommuteSummary', idCidade],
+        queryFn: () => getCommuteSummary(idCidade),
         enabled: !!idCidade,
     });
 

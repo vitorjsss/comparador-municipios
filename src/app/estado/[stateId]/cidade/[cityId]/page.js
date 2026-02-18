@@ -1,4 +1,4 @@
-import CityContent from "@/features/cities/components/CityContent";
+import CityContent from "@/components/cidades/CityContent";
 
 async function City({ params }) {
     const { cityId, stateId } = await params;

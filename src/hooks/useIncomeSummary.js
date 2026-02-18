@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getIncomeSummary } from "@/features/cities/api";
+import { getIncomeSummary } from "@/services";
 
 export function useIncomeSummary(idCidade) {
     const {

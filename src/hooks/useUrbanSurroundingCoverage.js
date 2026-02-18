@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getUrbanSurroundingCoverage } from "@/features/cities/api";
+import { getUrbanSurroundingCoverage } from "@/services";
 
 export function useUrbanSurroundingCoverage(idCidade) {
     const {

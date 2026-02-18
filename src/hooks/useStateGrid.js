@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getStateGrid } from "@/features/cities/api";
+import { getStateGrid } from "@/services";
 
 export function useStateGrid(uf) {
     const {

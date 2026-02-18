@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getCityInfo } from "@/features/cities/api";
+import { getCityInfo } from "@/services";
 
 export function useCityInfo(idCidade, idEstado) {
     const {

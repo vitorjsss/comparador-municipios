@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getEmploymentRate } from "@/features/cities/api";
+import { getEmploymentRate } from "@/services";
 
 export function useEmploymentRate(idCidade) {
     const {

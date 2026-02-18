@@ -1,6 +1,10 @@
 import { BASE_URL, NIVEL_CIDADE, NIVEL_ESTADO } from './config';
 
 export async function getCities(idEstado) {
+    if (!idEstado) {
+        return [];
+    }
+
     const agregado = '10289';
     const response = await fetch(`${BASE_URL}/${agregado}/periodos/-6/variaveis/13536?localidades=${NIVEL_CIDADE}[${NIVEL_ESTADO}[${idEstado}]]`);
 

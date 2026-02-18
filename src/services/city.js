@@ -1,5 +1,3 @@
-import { PERIODO } from './config';
-import { fetchIBGE } from './helpers';
 import { getStates } from './states';
 import { getCities } from './cities';
 

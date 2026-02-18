@@ -1,21 +1,21 @@
 'use client'
-import SmallCard from "@/features/cities/components/SmallCard";
-import LargeCard from "@/features/cities/components/LargeCard";
-import CardRow from "@/features/cities/components/SmallCardRow";
+import SmallCard from "@/components/cidades/SmallCard";
+import LargeCard from "@/components/cidades/LargeCard";
+import CardRow from "@/components/cidades/SmallCardRow";
 import Spinner from "@/components/Spinner";
-import MediumCard from "./MediumCard";
-import CommuteChart from "./CommuteChart";
-import EducationChart from "./EducationChart";
+import MediumCard from "@/components/cidades/MediumCard";
+import CommuteChart from "@/components/cidades/CommuteChart";
+import EducationChart from "@/components/cidades/EducationChart";
 
-import { usePopulation } from "../hooks/usePopulation";
-import { useIncomeSummary } from "../hooks/useIncomeSummary";
-import { useEmploymentRate } from "../hooks/useEmploymentRate";
-import { useSewageSummary } from "../hooks/useSewageSummary";
-import { useWaterNetworkCoverage } from "../hooks/useWaterNetworkCoverage";
-import { useUrbanSurroundingCoverage } from "../hooks/useUrbanSurroundingCoverage";
-import { useEducationSummary } from "../hooks/useEducationSummary";
-import { useCommuteSummary } from "../hooks/useCommuteSummary";
-import { useCityInfo } from "../hooks/useCityInfo";
+import { usePopulation } from "@/hooks/usePopulation";
+import { useIncomeSummary } from "@/hooks/useIncomeSummary";
+import { useEmploymentRate } from "@/hooks/useEmploymentRate";
+import { useSewageSummary } from "@/hooks/useSewageSummary";
+import { useWaterNetworkCoverage } from "@/hooks/useWaterNetworkCoverage";
+import { useUrbanSurroundingCoverage } from "@/hooks/useUrbanSurroundingCoverage";
+import { useEducationSummary } from "@/hooks/useEducationSummary";
+import { useCommuteSummary } from "@/hooks/useCommuteSummary";
+import { useCityInfo } from "@/hooks/useCityInfo";
 
 function CityContent({ cityId, stateId }) {
     const { data: population, isLoading: isPopulationLoading } = usePopulation(cityId);
@@ -50,7 +50,7 @@ function CityContent({ cityId, stateId }) {
     }
 
     return (
-        <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="max-w-7xl mx-auto px-4 py-2">
             <div className="flex flex-col gap-6">
                 <LargeCard
                     cityName={cityData.name}
@@ -60,7 +60,7 @@ function CityContent({ cityId, stateId }) {
 
                 <div className="space-y-8">
                     <section>
-                        <h2 className="text-primary-800 text-2xl font-semibold mb-4">Informações Gerais</h2>
+                        <h2 className="text-gray-800 text-2xl font-semibold mb-4">Informações Gerais</h2>
                         <CardRow>
                             <SmallCard
                                 title="População"
@@ -81,7 +81,7 @@ function CityContent({ cityId, stateId }) {
                     </section>
 
                     <section>
-                        <h2 className="text-primary-800 text-2xl font-semibold mb-4">Infraestrutura e Saneamento</h2>
+                        <h2 className="text-gray-800 text-2xl font-semibold mb-4">Infraestrutura e Saneamento</h2>
                         <CardRow>
                             <SmallCard
                                 title="Cobertura de Esgoto"
@@ -103,7 +103,7 @@ function CityContent({ cityId, stateId }) {
 
                     {(commuteSummary || educationSummary) && (
                         <section>
-                            <h2 className="text-primary-800 text-2xl font-semibold mb-4">Análises e Distribuições</h2>
+                            <h2 className="text-gray-800 text-2xl font-semibold mb-4">Análises e Distribuições</h2>
                             <CardRow>
                                 {commuteSummary && (
                                     <MediumCard

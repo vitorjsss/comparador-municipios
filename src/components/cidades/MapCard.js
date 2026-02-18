@@ -1,6 +1,6 @@
 'use client'
 import Image from "next/image"
-import { useStateGrid } from "@/features/cities/hooks/useStateGrid"
+import { useStateGrid } from "@/hooks/useStateGrid"
 
 function MapCard({ uf }) {
     const { isLoading, data, error } = useStateGrid(uf);

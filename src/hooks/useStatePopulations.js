@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { getStatePopulations } from "@/features/cities/api/population";
+import { getStatePopulations } from "@/services";
 
 export function useStatePopulations(stateId) {
     const {

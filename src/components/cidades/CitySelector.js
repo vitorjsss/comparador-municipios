@@ -1,10 +1,10 @@
 'use client'
 
 import Select from "react-select";
-import { useStates } from "../hooks/useStates";
+import { useCities } from "@/hooks/useCities";
 
-function StateSelector({ value, onChange }) {
-    const { data: states, isLoading } = useStates();
+function CitySelector({ value, onChange, stateId }) {
+    const { data: cities, isLoading: loadingCities } = useCities(stateId);
 
     const customStyles = {
         control: (provided, state) => ({
@@ -47,11 +47,11 @@ function StateSelector({ value, onChange }) {
 
     return (
         <div>
-            <h3 className="text-primary-700 font-normal mb-2">Buscar Estado</h3>
+            <h3 className="text-gray-700 font-semibold mb-2">Buscar Cidade</h3>
             <Select
-                options={states || []}
-                isLoading={isLoading}
-                placeholder="Selecione um estado..."
+                options={cities || []}
+                isLoading={loadingCities}
+                placeholder="Selecione uma cidade..."
                 value={value}
                 onChange={onChange}
                 getOptionValue={(option) => option.id}
@@ -61,4 +61,4 @@ function StateSelector({ value, onChange }) {
     )
 }
 
-export default StateSelector
+export default CitySelector

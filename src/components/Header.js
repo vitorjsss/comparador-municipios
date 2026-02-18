@@ -4,11 +4,13 @@ import Link from 'next/link';
 
 function Header() {
     return (
-        <header className='border-b bg-white border-primary-50 px-8 py-5'>
-            <Link href="/" className='flex justify-between items-center max-w-7xl mx-auto'>
-                <Logo />
+        <header className='border-b bg-white border-primary-50 px-5 py-3'>
+            <div className='flex justify-between items-center gap-10 mx-auto max-w-7xl'>
+                <Link href="/">
+                    <Logo />
+                </Link>
                 <Navigation />
-            </Link>
+            </div>
         </header>
     );
 }
