@@ -125,4 +125,4 @@ Open in browser:
 Frontend Developer | React & Next.js | Software Engineering
 
 GitHub: [https://github.com/vitorjsss](https://github.com/vitorjsss)
-LinkedIn: [https://linkedin.com/in/linkedin_username](https://linkedin.com/in/vitorjsss)
+LinkedIn: [https://linkedin.com/in/vitorjsss](https://linkedin.com/in/vitorjsss)
